@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice of Heaven</title>
+	<script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+     alert("Welcome to my website!");
+
+    });
+
+    </script>
+    <style>
+
+        a:link {
+        color: black;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: blue;
+        }
+
+        a:hover {
+        color: red;
+        text-decoration: underline;
+        }
+
+        a:active {
+        border-radius: 20%;
+        background-color: white;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #fe332e;
+            color: #333;
+        }
+        
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            background: #F0E68C;
+            padding: 0.5rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: black;
+        }
+        
+        nav a {
+            color: black;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+            padding: 5px 10px;
+        }
+        
+        
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 20px;
+        }
+        
+        section {
+            flex: 2;
+            padding: 20px;
+            background: #F0E68C;
+            border-radius: 5px;
+            position: relative;
+        }
+        
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #F0E68C;
+            border-radius: 5px;
+            min-width: 250px;
+            position: relative;
+        }
+        
+        article {
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+        }
+        
+        article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: block;
+        }
+        
+        ul {
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        ul a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            display: inline-block;
+            padding: 2px 0;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .absolute-box {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid #333;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: black;
+            z-index: 10;
+        }
+
+        .fixed-notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: black;
+            z-index: 20;
+        }
+
+        .static-container {
+            position: static;
+            background-color: #F0E68C;
+            padding: 20px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            section, aside {
+                flex: 1 1 100%;
+            }
+            
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            article img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Slice of Heaven</h1>
+        <p>Hot, fresh, and ready to melt your heart – one slice at a time.</p>
+    </header>
+
+    <nav>
+        <a href="HOME.html">Home</a>
+        <a href="ABOUT US.html">About Us</a>
+        <a href="DASHBOARD.html">Dashboard</a>
+		<a href="DRINKS.html">Drinks</a>
+		<a href="GALLERY.html">Gallery</a>
+		<a href="CONTACT US.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Pizza's from Heaven</h2>
+
+            <article>
+                <h3>Heavenly Supreme</h3>
+                <p>Deliciously cheesy, perfectly crispy, your favorite pizza, made to satisfy!</p>
+                <img src="C:\Users\ajsee\OneDrive - adamson.edu.ph\Desktop\Web Design Principles_See_\images/Heavenly Supreme.jpg" width="500" height="300" alt="Heavenly Supreme Pizza">
+            </article>
+
+            <article>
+                <h3>Inferno Supreme</h3>
+                <p>Hot, fresh, and full of flavor, our pizza is the perfect bite every time!</p>
+                <img src="C:\Users\ajsee\OneDrive - adamson.edu.ph\Desktop\Web Design Principles_See_\images/infernooo.jpg" width="500" height="300" alt="Inferno Supreme Pizza">
+            </article>
+
+            <div class="absolute-box">
+                <h3>Special Offer!</h3>
+                <p>Get 20% off on your first order!</p>
+            </div>
+        </section>
+
+        <aside>
+            <h2>What's New</h2>
+            <p>At Slice of Heaven, pizza is our passion. Since 2010, we've been serving up delicious, handcrafted pizzas with fresh dough, slow-cooked sauce, and 
+			quality toppings. Whether you're here for a classic or something bold, we promise every slice is made with love and the best ingredients.</p>
+            <p>Come for the pizza, stay for the memories!</p>
+
+            <h3>Popular Topics</h3>
+            <ul>
+                <li><a href="MORE FLAVORED PIZZAS.html">More flavored pizzas</a></li>
+                <li><a href="PIZZA DEALS AND DISCOUNTS.html">Pizza deals and Discounts</a></li>
+                <li><a href="ONLINE ORDERING AND DELIVERY.html">Online ordering and Delivery</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <div class="static-container">
+        <h3>Welcome to Slice of Heaven!</h3>
+        <p>We are dedicated to providing you with the best pizza experience. Enjoy our special offers and delicious flavors!</p>
+    </div>
+
+    <div class="fixed-notification">
+        <p>Don't miss our daily specials!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Slice of Heaven. All rights reserved.</p>
+    </footer>
+</body>
+</html>

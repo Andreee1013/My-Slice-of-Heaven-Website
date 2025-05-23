@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get in Touch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #FDECEA;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 320px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #C62828;
+            border-bottom: 3px solid #C62828;
+            padding-bottom: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #E57373;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border: 2px solid #EF5350;
+        }
+
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(to right, #EF5350, #C62828);
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(to right, #C62828, #B71C1C);
+        }
+
+        .map-section {
+            margin-top: 30px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .map-section h3 {
+            color: #C62828;
+            margin-bottom: 10px;
+        }
+
+        .map-section iframe {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 50px;
+            }
+            .contact-container {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: stretch;
+            }
+            .contact-form {
+                margin-right: 30px;
+                width: 40%;
+                max-width: none;
+            }
+            .map-section {
+                margin-top: 0;
+                width: 55%;
+            }
+            .map-section iframe {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <form class="contact-form">
+            <h2>Get in Touch</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button class="submit-btn">Submit →</button>
+        </form>
+        <div class="map-section">
+            <h3>How to Get Here</h3>
+            <p>We're located at 900 San Marcelino St Ermita Manila via Google Maps:</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.417678182912!2d120.98022867623158!3d14.581899085573888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca1e48e59f2d%3A0x972f56e55f184b82!2s900+San+Marcelino+St,+Ermita,+Manila,+Metro+Manila,+Philippines!5e0!3m2!1sen!2sus!4v1700567392128!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
